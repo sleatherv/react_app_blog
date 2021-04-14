@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
 export default function Header() {
@@ -7,9 +7,9 @@ export default function Header() {
         <HeaderContainer>
             <Title>My personal blog</Title>
             <Menu>
-                <Link to="/">Home</Link>
-                <Link to="/blog">Blog</Link>
-                <Link to="/about">About</Link>
+                <NavLink to="/" exact={true}>Home</NavLink>
+                <NavLink to="/blog">Blog</NavLink>
+                <NavLink to="/about">About</NavLink>
             </Menu>
         </HeaderContainer>
     )
@@ -35,5 +35,9 @@ const Menu = styled.nav`
 
     a:hover{
         color: #191668
+    }
+    a.active{
+        border-bottom: 2px solid #165168;
+        padding-bottom: 3px;
     }
 `;
