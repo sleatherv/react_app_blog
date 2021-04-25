@@ -1,13 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import posts from '../data/posts';
 
 export default function Blog() {
     return (
         <div>
             <h2>Blog</h2>
             <ul>
-                <li>Article 1</li>
-                <li>Article 2</li>
-                <li>Article 3</li>
+                {posts.map(post => {
+                    return (
+                        <li key={post.id}>
+                            <Link to={`/post/${post.id}`}>{post.title}</Link>
+                        </li>
+                    );
+                })}
             </ul>
         </div>
     )
