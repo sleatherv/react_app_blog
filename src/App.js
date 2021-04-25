@@ -5,6 +5,7 @@ import About from './components/About';
 import Blog from './components/Blog';
 import Header from './components/Header';
 import Home from './components/Home';
+import Post from './components/Post';
 
 export default function App() {
   return (
@@ -14,8 +15,8 @@ export default function App() {
         <Main>
           <Route path="/" exact={true} component={Home} />
           <Route path="/blog" component={Blog} />
+          <Route path="/post/:id" component={Post} />
           <Route path='/about' component={About} />
-
         </Main>
       </MainContainer>
     </BrowserRouter>
