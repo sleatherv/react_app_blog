@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import About from './About';
 import Blog from './Blog';
 import Header from './Header';
 import Home from './Home';
 import Post from './Post';
+import Error404 from './Error404';
 
 export default function App() {
   return (
@@ -13,10 +14,13 @@ export default function App() {
       <MainContainer>
         <Header />
         <Main>
-          <Route path="/" exact={true} component={Home} />
-          <Route path="/blog" component={Blog} />
-          <Route path="/post/:id" component={Post} />
-          <Route path='/about' component={About} />
+          <Switch>
+            <Route path="/" exact={true} component={Home} />
+            <Route path="/blog" component={Blog} />
+            <Route path="/post/:id" component={Post} />
+            <Route path='/about' component={About} />
+            <Route component={Error404}></Route>
+          </Switch>
         </Main>
       </MainContainer>
     </BrowserRouter>
