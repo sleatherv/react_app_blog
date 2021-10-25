@@ -40,18 +40,18 @@ Your app is ready to be deployed!
 
 Home Page:
 
-![](https://github.com/sleatherv/react_app_blog/blob/dev/examples/Home.PNG?raw=true)
+![](https://github.com/sleatherv/react_app_blog/blob/main/examples/About.PNG)
 
 Blog Page:
 
-![](https://github.com/sleatherv/react_app_blog/blob/dev/examples/Blog.PNG?raw=true)
+![](https://github.com/sleatherv/react_app_blog/blob/main/examples/Blog.PNG?raw=true)
 
-![](https://github.com/sleatherv/react_app_blog/blob/dev/examples/Article.PNG?raw=true)
+![](https://github.com/sleatherv/react_app_blog/blob/main/examples/Article.PNG?raw=true)
 
 About Page:
 
-![](https://github.com/sleatherv/react_app_blog/blob/dev/examples/About.PNG?raw=true)
+![](https://github.com/sleatherv/react_app_blog/blob/main/examples/About.PNG?raw=true)
 
 Error Page:
 
-![](https://github.com/sleatherv/react_app_blog/blob/dev/examples/Error.PNG?raw=true)
+![](https://github.com/sleatherv/react_app_blog/blob/main/examples/Error.PNG?raw=true)
