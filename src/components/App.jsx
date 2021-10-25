@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BrowserRouter, Route } from 'react-router-dom';
-import About from './components/About';
-import Blog from './components/Blog';
-import Header from './components/Header';
-import Home from './components/Home';
-import Post from './components/Post';
+import About from './About';
+import Blog from './Blog';
+import Header from './Header';
+import Home from './Home';
+import Post from './Post';
 
 export default function App() {
   return (
