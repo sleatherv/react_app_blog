@@ -1,4 +1,5 @@
 import React from 'react'
+import Controls from './Controls'
 
 export default function About() {
     return (
@@ -7,6 +8,7 @@ export default function About() {
             <ul>
                 <p>Hi, I'm Sleather</p>
             </ul>
+            <Controls />
         </div>
     )
 }
